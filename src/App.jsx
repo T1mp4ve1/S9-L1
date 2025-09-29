@@ -1,17 +1,18 @@
-// import { useState } from "react";
-// import reactLogo from "./assets/react.svg";
-// import viteLogo from "/vite.svg";
 import "./App.css";
-import MyNewComponent from "./assets/components/MyNewComponent";
-import MyNewClassComp from "./assets/components/MyNewClassComp";
+import ButtonReact from "./assets/components/buttonReact";
+import IMGReact from "./assets/components/IMGReact";
 
 function App() {
-  // const [count, setCount] = useState(0);
-
   return (
     <>
-    <MyNewComponent customTitle="TITOLO PERSONALIZZATO" myNumber={100} />
-    <MyNewClassComp customTitle="TITOLO classe" myNumber={150} />
+      <IMGReact
+        src="https://img.freepik.com/foto-gratuito/pianeta-immaginario-con-cielo-notturno-colorato-stelle-e-nebulosa_1048-7926.jpg?semt=ais_hybrid&w=740&q=80"
+        alt="spazio"
+      />
+      <ButtonReact
+        className="btn btn-lg btn-dark rounded-0"
+        buttonContent="Cliccami"
+      />
     </>
   );
 }

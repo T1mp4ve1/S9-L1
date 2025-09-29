@@ -1,0 +1,12 @@
+import { Component } from "react";
+
+class IMGReact extends Component {
+  render() {
+    return (
+      <>
+        <img src={this.props.src} alt={this.props.alt} />
+      </>
+    );
+  }
+}
+export default IMGReact;
